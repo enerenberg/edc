@@ -1,0 +1,63 @@
+body {
+	margin: 0;
+	background-color: hsla(0, 0%, 0%, .25);
+}
+div {
+	background-color: hsla(0, 0%, 100%, 1);
+	width: 25vw;
+	height: 25vw;
+	margin: 50px auto;
+	position: relative;
+
+}
+
+/*CLEARFIX - clears floats*/
+div::after {
+	content: "";
+	display: block;
+	/*background-color: red;
+	height: 1px;*/
+	clear: both;
+}
+img {
+	width: 25%;
+	height: auto;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	
+}
+.cat1 {
+	top: 0;
+	left: auto;
+	right: 0;
+
+}
+.cat2 {
+	top: auto;
+	left: auto;
+	bottom: 0;
+	right: 0;
+
+}
+.cat3 {
+	top: auto;
+	left: 0;
+	bottom: 0;	
+
+}
+.cat4 {
+	top: 0;
+	left: 0;
+
+}
+.cat5 {
+	left: 40%;
+	top: 37%;
+		
+}
+.cat6 {
+	right: 40%;
+	top: 37%;
+
+}
