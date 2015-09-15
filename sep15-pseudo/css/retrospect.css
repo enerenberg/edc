@@ -1,0 +1,46 @@
+h1 {
+	text-transform: uppercase;
+	display: inline;
+	position: absolute;
+	top: 0px;
+	margin-left: 50px;
+	margin-top: 25px;
+}
+h3 {
+	text-transform: uppercase;
+	display: inline;
+	position: absolute;
+	top: 0px;
+	margin-right: 50px;
+	margin-top: 25px;
+	
+}
+
+img {
+	height: auto;
+	position: absolute;
+	top: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+
+}
+
+.menu {
+	float: right;
+	margin-right: 100px;
+
+}
+.diamond {
+	content: "";
+	display: block;
+	height: 100px;
+	width: 100px;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 50%;
+}
