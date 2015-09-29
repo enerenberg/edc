@@ -5,6 +5,13 @@ h1 {
 	top: 0px;
 	margin-left: 50px;
 	margin-top: 25px;
+
+}
+
+h2 {
+	text-transform: uppercase;
+	display: inline;
+	
 }
 h3 {
 	text-transform: uppercase;
