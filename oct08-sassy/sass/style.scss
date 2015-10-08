@@ -1,0 +1,65 @@
+/*sass goes here*/
+
+$rand: random(360);
+$randcolor: hsla($rand, 50%, 50%, 1);
+$deg: hue($randcolor);
+
+@mixin div-padding($x){
+	padding: $x;
+}
+
+@mixin insta-border($x, $y, $z){
+	border-width: $y;
+	border-style: $x;
+	border-color: $z;
+	padding: $y 50px 50px;
+	color: $z;
+	text-shadow: 1px 1px 0 darken($z, 30);
+}
+
+
+$key: hsla(0, 50%, 50%, 1);
+$red: $key;
+$orange: $red;
+$orange: invert(adjust-hue($key, 14));
+$green: adjust-hue($key, 115);
+$yellow: adjust-hue($key, 44);
+$blue: complement(adjust-hue($key, 237));
+$lighten-orange: lighten($orange, 50);
+$darken-orange: darken($orange, 35);
+
+
+
+
+
+main div {
+	width: 100px;
+	height: 100px;
+	border: 2px solid;
+	&:nth-of-type(1){
+		background-color: $randcolor;
+		// @include div-padding(20px);
+		@include insta-border(dotted, 10px, $blue);
+		&::before {
+			content:"#{$deg}";
+		}
+	}	
+	&:nth-of-type(2){
+		background-color: $lighten-orange;
+		// @include div-padding(40px);
+		@include insta-border (solid, 10px, $key);
+
+	}
+	&:nth-of-type(3){
+		background-color: $darken-orange;
+		@include insta-border (dashed, 5px, $key);
+	}
+	&:nth-of-type(4){
+		background-color: $yellow;
+		@include insta-border (groove, 20px, $key);
+	}
+	&:nth-of-type(5){
+		background-color: $blue;
+		@include insta-border (ridge, 25px, $key);
+	}
+}

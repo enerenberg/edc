@@ -55,6 +55,7 @@ a {
 	}
 	&.btn-signup {
 		background-color: $keycolor;
+		color: $white;
 	}
 }
 /* GLOBAL styles end */
@@ -281,6 +282,7 @@ header {
 	@extend %clearfix;
 	div {
 		width: 25%;
+		padding: 25px;
 		float: left;
 		&:first-child {
 			width: 50%;
@@ -291,6 +293,7 @@ header {
 		margin-right: 10px;
 		color: $keycolor;
 	}
+
 }
 @media screen and (max-width: 766px){
 	#features {
