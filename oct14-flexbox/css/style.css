@@ -5,23 +5,11 @@ body {
 ul, ol {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-right: 0;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
-}
-
-.btn {
-  padding: 20px 40px;
-  display: inline-block;
-  border: 1px solid white;
-  color: white;
-}
-.btn:hover {
-  background-color: #f7951d;
-  border-color: #f7951d;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -2568,213 +2556,45 @@ h1, h2, h3, h4, h5, h6, p {
   content: "\f280";
 }
 
-.floats .util-nav::before, .floats .util-nav.about::before, .floats.promos::before, .floats.features::before, .floats .util-nav::after, .floats .util-nav.about::after, .floats.promos::after, .floats.features::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 /*sass goes here*/
-.floats .util-nav {
-  background-image: url(../img/patt1.png);
-}
-.floats .util-nav li {
-  display: inline-block;
-  float: left;
-}
-.floats .util-nav h1 {
-  float: left;
-  color: #f26321;
-  margin-bottom: 0;
-}
-.floats .util-nav ul {
-  float: right;
-}
-.floats .util-nav i {
-  float: left;
-  margin-bottom: 0 10px;
-  font-size: 2em;
-  color: #00b0f0;
-}
-.floats .util-nav div {
-  float: left;
-}
-.floats .util-nav.about div:first-child {
-  width: 33%;
-  float: left;
-}
-.floats .util-nav.about div:last-child {
-  width: 66%;
-}
-.floats nav {
-  background-color: #292929;
-  color: white;
-}
-.floats nav li {
-  display: inline-block;
-  font-size: 1.1em;
-  font-weight: 100;
-  text-transform: uppercase;
-}
-.floats nav li:hover {
-  background-color: #f7951d;
-}
-.floats nav li a {
-  display: block;
-  padding: 25px 30px;
-}
-.floats .cta {
-  padding: 100px 0;
-  text-align: center;
-  color: white;
-  background-image: url(../img/page-1_slide1.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.floats .cta h2 {
-  font-size: 2em;
-  text-transform: uppercase;
-}
-.floats.promos {
-  padding: 75px 5vw;
-  padding: 75px 5vw;
-}
-.floats.promos div {
-  width: 25%;
-  float: left;
-}
-.floats.features {
-  padding: 75px 5vw;
-  padding: 75px 5vw;
-  text-align: center;
-}
-.floats.features div {
-  width: 33%;
-  float: left;
-}
-.floats.features i {
-  color: #00b0f0;
-  font-size: 3em;
-  width: 3em;
-  height: 3em;
-  border: 1px solid #00b0f0;
-  border-radius: 50%;
-  line-height: 3em;
-  margin-bottom: 40px;
-}
-.floats.about {
-  padding: 75px 5vw;
+html {
+  height: 100%;
 }
 
-.flex .util-nav {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+body {
+  background-color: green;
+  height: 100%;
 }
-.flex .util-nav ul {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-.flex .util-nav h1 {
-  margin-right: auto;
-  color: green;
-  margin-bottom: 0;
-}
-.flex .util-nav li {
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-.flex .util-nav li i {
-  margin-bottom: 0 10px;
-  font-size: 2em;
-  color: #00b0f0;
-}
-.flex nav {
-  background-color: #292929;
+
+div {
+  width: 50px;
+  height: 50px;
+  background-color: green;
   color: white;
 }
-.flex nav ul {
-  width: 100%;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+div:first-child {
+  background-color: red;
+}
+div:last-child {
+  background-color: blue;
+}
+
+main {
+  background-color: #f0dbdb;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap-reverse;
+      -ms-flex-wrap: wrap-reverse;
+          flex-wrap: wrap-reverse;
 }
-.flex nav li {
-  text-align: center;
-  font-size: 1.1em;
-  font-weight: 100;
-  text-transform: uppercase;
-}
-.flex nav li:hover {
-  background-color: #f7951d;
-}
-.flex nav li a {
-  display: block;
-  padding: 25px 30px;
-}
-.flex .cta {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 25vw;
-  color: white;
-  background-image: url(../img/page-1_slide1.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.flex .cta h2 {
-  font-size: 2em;
-  text-transform: uppercase;
-}
-.flex.promos {
-  padding: 75px 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.flex.promos div {
-  width: 20%;
-}
-.flex.features {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 75px 0;
-  text-align: center;
-}
-.flex.features div {
-  width: 30%;
-}
-.flex.features i {
-  color: #00b0f0;
-  font-size: 3em;
-  width: 3em;
-  height: 3em;
-  border: 1px solid #00b0f0;
-  border-radius: 50%;
-  margin: 0 auto 40px;
-  line-height: 3em;
+main div:nth-child(2) {
+  background-color: yellow;
 }
