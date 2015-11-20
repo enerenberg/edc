@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+/* sass goes here */
+body {
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-align: center;
+  background-color: lightgray;
+  width: 400px;
+  height: 500px;
+  padding: 25px;
+  border: 1px solid navy;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#input {
+  height: 25px;
+  width: 100%;
+  left: 0;
+  margin-top: 50px;
+}
+
+#submitBtn {
+  height: 25px;
+  width: 100px;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+div {
+  margin: 0 auto;
+}
+
+span {
+  margin-top: 25px;
+}
+
+#kittens {
+  border-style: none;
+  border-radius: 5px;
+  height: 300px;
+  background-color: white;
+}

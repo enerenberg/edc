@@ -1,0 +1,24 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+
+html, body {
+	height: 100%;
+}
+body {
+	margin:50px 0px; 
+	padding:0px;
+    
+}
+
+input {
+ display: inline-block;
+ width: 150px;
+ margin-bottom: 10px;
+}
+
+br {
+ clear: left;
+}

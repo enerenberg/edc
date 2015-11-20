@@ -1,0 +1,36 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic);
+
+%clearfix {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* sass goes here */
+
+nav {
+	background-image: url("../img/guardians.jpg");
+	width: 100%;
+	height: 100vw;
+	background-repeat: no-repeat;
+	
+}
+
+h1 a {
+	font-family: 'Droid Serif', serif;
+	font-size: 2em;
+	color: $brown;
+	display: block;
+	text-align: center;
+}
+
+.charactors a {
+	@extend %clearfix;
+	font-size: 1.5em;
+	color: $brown;
+	display: inline-block;
+	text-align: center;
+}
