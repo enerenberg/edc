@@ -1,0 +1,88 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+
+body {
+	background-color: hsla(0, 0%, 96%, 1);
+}
+p, input {
+	background-color: hsla(0, 0%, 100%, 1);
+	border: 1px solid gray;
+	padding: 10px;
+	margin: 5vw;
+}
+h1 {
+	text-align: center;
+	margin: 5vw;
+}
+main {
+	width: 300px;
+	height: 300px;
+	background-color: pink;
+	margin: 50px auto;
+	position: relative;
+	span {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: mediumpurple;
+		z-index: 1;
+	}
+	div {
+		position: absolute;
+		background-color: black;
+		z-index: 10;
+	}
+	div:nth-of-type(odd){
+		width: 100px;
+		height: 10px;
+	}
+	div:nth-of-type(even){
+		width: 10px;
+		height: 50px;
+	}
+	div:nth-of-type(1){
+		top: 50px;
+		left: 0;
+	}
+	div:nth-of-type(2){
+		top: 100px;
+		left: 100px;
+	}
+	div:nth-of-type(3){
+		top: 150px;
+		left: 100px;
+	}
+	div:nth-of-type(4){
+		top: 150px;
+		left: 192px;
+	}
+	div:nth-of-type(5){
+		top: 198px;
+		left: 102px;
+		width:10px;
+		height: 25%;
+	}
+	div:nth-of-type(6){
+		top: 50px;
+		left: 100px;
+	}
+	div:nth-of-type(7){
+		top: 198px;
+		left: 192px;
+	}
+	div:nth-of-type(8){
+		top: 208px;
+		left: 282px;
+	}
+
+}
+
+
+
+
+

@@ -1,0 +1,24 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+body {
+	display: flex;
+
+}
+
+#kittens {
+	border: 1px solid black;
+	height: 400px;
+	width: 400px;
+}
+.btn {
+	border: 1px solid black;
+	height: 50px;
+	width: auto;
+}
+form {
+	img {
+		display: none;
+	}
+}

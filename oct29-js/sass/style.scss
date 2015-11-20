@@ -1,0 +1,47 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+header {
+	background-color: lightgray;
+	padding: 20px;
+	ul {
+		display: flex;
+		justify-content: flex-end;
+		li {
+			display: flex;
+		}
+		a {
+			display: block;
+			padding: 10px;
+			border: 1px solid gray;
+			border-radius: 4px;
+		}
+		ul.active {
+			display: block;
+		}
+		ul {
+			display: none;
+			border: 1px solid gray;
+			border-radius: 4px;
+			li {
+				display: block;
+			}
+			input {
+				display: block;
+				line-height: 1.5;
+				font-size: 1.25em;
+				margin: 5px;
+				&.error {
+					background-color: hsl(0, 70%, 80%);
+				}
+			}
+			button {
+				border: 1pxsolid blue;
+				background-color: lightblue;
+				padding: 10px 20px;
+			}
+		}
+	}
+}

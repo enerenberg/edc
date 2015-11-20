@@ -1,0 +1,62 @@
+/*sass goes here*/
+$unitless: 13;
+$number: 25;
+$str: "string of text";
+$unit: 25px;
+$color: hsla(220, 30%, 60%, 1);
+$width: 25vw;
+
+@debug comparable($unit, $unitless);
+
+$hue: 300;
+$sat: 40%;
+$lum: 60%;
+$alpha: .5;
+
+$color: hsla($hue, $sat, $lum, $alpha);
+$text: darken($color, 30);
+
+%clearfix {
+	&::before, &::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin theme($bgc, $tc, $fs){
+	@if (unit($fs) != "px" ) {
+		@if( unit($fs) == "em "){
+			@warn "Your provided an em value";
+		}
+		@if( unitless($fs) ){
+			@warn "You provided a vw value";
+		}
+		@warn "This value needs to be a px value";
+	}
+	@else{
+		font-size: $fs;
+		background-color: $bgc;
+		color: $tc;
+	}
+	
+}
+
+body {
+	@include theme(black, pink, $unit);
+	
+}
+
+/*
+Directives:
+@mixin - advanced placeholders
+@media - media queries
+@include - @mixin
+@import - importing css stylesheets
+@extend - % placeholders
+@debug
+
+@warn
+@error
+*/
+

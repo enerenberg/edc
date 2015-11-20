@@ -1,0 +1,45 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+
+html, body {
+	height: 100%;
+	
+}
+
+.user {
+	
+	background: linear-gradient(135deg, red, red 60%, blue);
+	box-shadow: 5px 5px 5px black;
+	width: 550px;
+	height: 200px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+input {
+	border: .5px solid black;
+	padding: 5px;
+	margin: 10px;
+}
+
+button {
+	background-color: teal;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 5px black;
+}

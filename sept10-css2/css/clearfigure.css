@@ -1,0 +1,59 @@
+header {
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}
+h1 {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: -10;
+	font-size: 3em;
+	font-family: 'Chivo' sans-serif;
+
+		
+}
+p {
+	text-align: center;
+	color: #ffffff;
+	font-weight: normal;
+	font-family: 'Chivo' sans-serif;
+
+}
+section {
+	text-align: center;
+	word-spacing: 25px;
+	margin-top: 100px
+
+}
+ul {
+	background-color: #A80154;
+	padding: 50;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	list-style-type: none;
+	display: block;
+
+}
+
+li {
+	display: inline-block;
+
+
+}
+
+
+a {
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	
+}
+body {
+	background-color: #333333;
+
+}
+
+nav {
+
+}
