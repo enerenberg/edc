@@ -1,0 +1,51 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+body {
+	font: {
+		family: sans-serif;
+		size: 100%;
+		weight: 200; 
+	}
+	background-color: hsla(0, 0%, 95%, 1);
+}
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+.recipeCard {
+	background-color: white;
+	width: 310px;
+	box-shadow: 0 0 20px transparentize(black, .9);
+	margin: 25px;
+	ol {
+		list-style-type: roman;
+		list-style-position: inside;
+		margin-bottom: 20px;
+	}
+	ul {
+		list-style-type: disc;
+		li::after{
+			content: ",";
+		}
+		li:last-child::after {
+			content: none;
+		}
+		li {
+			display: inline-block;
+		}
+	}
+	.img {
+		height: 150px;
+		background: {
+			//image: url("");
+			size: cover;
+		}
+	}
+	.content {
+		padding: 0 50px 50px 50px;
+	}
+}
+

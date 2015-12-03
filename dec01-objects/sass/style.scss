@@ -1,0 +1,78 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+header {
+	background-color: black;
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	h1 {
+		text-align: center;
+		color: white;
+
+	}
+	.navLinks {
+		color: white;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 25px;
+		
+	}
+}
+p {
+	margin-top: 25px;
+}
+.smi {
+	li {
+		display: inline-block;
+		margin-right: 5px;
+		i {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 25px;
+			height: 25px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 100%;
+			color: white;
+			padding: 10px auto;
+		}
+		i.fa-facebook {background-color: #3b5998;}
+		i.fa-twitter {background-color: #55acee;}
+		i.fa-flickr {background-color: #0063dc;}
+		i.fa-youtube {background-color: #cd201f;}
+		i.fa-instagram{background-color: #3f729b;}
+	}
+}
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 35px;
+	margin-bottom: 0;
+
+}
+
+.art {
+	ul {
+		width: (100px * 3);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		li {
+			width: 100px;
+			position: relative;
+		}
+		img {
+			display: flex;
+			width: 100%;
+			height: auto;
+		}
+
+	}
+}

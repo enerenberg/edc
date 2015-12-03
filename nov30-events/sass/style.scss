@@ -1,0 +1,30 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+
+body {
+	background: hsla(0, 0%, 90%, 1);
+
+}
+
+ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5vw auto;
+	width: (85px *3);
+	img {
+		display: flex;
+	}
+	li {
+		position: relative;
+		div.preview {
+			position: absolute;
+			left: 100%;
+			top: 50%;
+			transform: translate3d(0, -50%, 0);
+			z-index: 100;
+		}
+	}
+}
