@@ -1,0 +1,24 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+
+main {
+	position: relative;
+	#second,
+	#hour,
+	#minute {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 10.7vw;
+		height: auto;
+		transform: translate3d(-50%, 0, 0) rotate(0deg);
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
