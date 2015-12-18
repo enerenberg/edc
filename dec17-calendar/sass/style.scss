@@ -1,0 +1,85 @@
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+body {
+	font: {
+		family: sans-serif;
+		weight: 200;
+		size: 100%;
+	}
+}
+h1 {
+	font-weight: 400;
+	margin: 0;
+	text-align: center;
+}
+#cal {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 40px auto 0;
+	padding: 20px;
+	button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid lightgray;
+		border-radius: 2px;
+		padding: 0;
+		margin: 0;
+		width: 35px;
+		height: 35px;
+		&:hover {
+			cursor: pointer;
+			background: {
+				color: lightblue;
+				opacity: .5;
+
+			}
+		}
+	}
+	.daysOfWeek {
+		span {
+			display: inline-block;
+			width: 50px;
+			text-align: center;
+			font-size: 75%;
+			opacity: .5;
+			line-height: 1.5;
+		}
+	}
+	.days {
+		width: 50px * 7;
+		display: flex;
+		flex-wrap: wrap;
+		border: {
+			width: 1px 0 0 1px;
+			style: solid;
+			color: black;
+		}
+		div:nth-child(7n),
+		div:nth-child(7n + 1){
+			color: red;
+		}
+		div {
+			box-sizing: border-box;
+			width: 50px;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: {
+				width: 0 1px 1px 0;
+				style: solid;
+				color: black;
+			}
+			&.today {
+				color: white;
+				background-color: hsla(0, 100%, 50%, .65);
+			}
+		}
+	}
+}

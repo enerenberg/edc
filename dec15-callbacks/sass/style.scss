@@ -1,0 +1,51 @@
+@import "variables";
+@import "reset";
+//@import "fontawesome";
+
+/* sass goes here */
+
+$green: hsl(107, 47%, 51%);
+$yellow: hsl(41, 98%, 57%);
+$orange: hsl(28, 91%, 54%);
+$red: hsl(359, 73%, 55%);
+$purple: hsl(299, 42%, 42%);
+$blue: hsl(197, 100%, 43%);
+
+/*
+
+^ = starts with
+$ = ends with
+* = contains
+
+*/
+body {
+	font-family: sans-serif;
+}
+div[class^="div"]{
+	height: 50px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.div {
+	&-green {
+		background-color: $green;
+	}
+	&-yellow {
+		background-color: $yellow;
+	}
+	&-orange {
+		background-color: $orange;
+	}
+	&-red {
+		background-color: $red;
+	}
+	&-purple {
+		background-color: $purple;
+	}
+	&-blue {
+		background-color: $blue;
+	}
+}
